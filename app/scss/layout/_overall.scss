@@ -13,6 +13,11 @@
     width: 1px;
 }
 
+.cap-width {
+    max-width: func.rem(1600);
+    margin: 0 auto;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -34,6 +39,7 @@ nav {
 
 header {
     $root: #{navbar};
+    margin: 0 auto;
     padding-top: clamp(1.5rem, 4.7vw, 4rem);
     padding-left: clamp(1.5rem, 6vw, 5rem);
     padding-right: clamp(1.5rem, 6vw, 5rem);

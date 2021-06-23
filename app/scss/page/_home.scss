@@ -17,6 +17,7 @@
     transition: transform .3s ease;
     transform: translateX(-100%);
     top: 2rem;
+    z-index: 10;
 
     &.show {
         transform: translateX(0);
@@ -84,12 +85,16 @@
 }
 
 .content {
-    @extend %column-reverse;
-    @extend %left-right-pad;
     background: url("../images/bg-curve-mobile.svg") no-repeat center top;
     background-size: cover;
-    padding-top: func.size(100, 12vw, 178);
-    padding-bottom: func.size(87, 8.4vw, 108);
+    
+
+    &__container {
+        @extend %column-reverse;
+        @extend %left-right-pad;
+        padding-top: func.size(100, 12vw, 178);
+        padding-bottom: func.size(87, 8.4vw, 108);
+    }
 
     &__divider {
         flex: 0 1 100%;
@@ -204,12 +209,15 @@
 }
 
 .cta {
-    @include mix.flex(center, center, column);
     background-color: var.$d-blue;
-    padding-top: func.size(58, 12vw, 105);
-    padding-right: func.size(50, 6vw, 80);
-    padding-bottom: func.size(48, 12vw, 52);
-    padding-left: func.size(50, 6vw, 80);
+    
+    &__container {
+        @include mix.flex(center, center, column);
+        padding-top: func.size(58, 12vw, 105);
+        padding-right: func.size(50, 6vw, 80);
+        padding-bottom: func.size(48, 12vw, 52);
+        padding-left: func.size(50, 6vw, 80);
+    }
 
     &__divider {
         margin-bottom: func.rem(28);
@@ -235,11 +243,14 @@
 .footer {
     $root: &;
     background-color: var.$vd-blue;
-    font-size: func.rem(17);
-    padding-top: func.size(69, 7.2vw, 92);
-    padding-right: func.size(38, 6.2vw, 80);
-    padding-bottom: func.size(50, 7.2vw, 88);
-    padding-left: func.size(38, 6.2vw, 80);
+    
+    &__cap {
+        font-size: func.rem(17);
+        padding-top: func.size(69, 7.2vw, 92);
+        padding-right: func.size(38, 6.2vw, 80);
+        padding-bottom: func.size(50, 7.2vw, 88);
+        padding-left: func.size(38, 6.2vw, 80);
+    }
     
     * {
         color: #dbdbdb;
@@ -333,7 +344,10 @@
     }
 
     .content {
-        flex-direction: row;
+
+        &__container {
+            flex-direction: row;
+        }
 
         &__divider {
             
@@ -367,8 +381,11 @@
     }
 
     .cta {
-        flex-direction: row;
-        justify-content: space-between;
+        
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         &__divider {
             width: 50%;

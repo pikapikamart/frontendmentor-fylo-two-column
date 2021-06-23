@@ -21,7 +21,7 @@
 
 <body>
   <div class="email-success">Email successfully submitted!</div>
-  <header class="navbar navbar--flattened">
+  <header class="navbar navbar--flattened cap-width">
     <img class="navbar__logo" src="./images/logo.svg" alt="fylo website logo">
     <nav>
       <ul class="navbar--flattened">
@@ -39,7 +39,7 @@
   </header>
   <main>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero cap-width">
       <div class="hero__divider">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>Fylo stores your most important files in one secure location.
@@ -49,7 +49,7 @@
           <div class="form__holder">
             <p class="visually-hidden js-email-region" aria-live="polite"></p>
             <input class="form__input" type="text" name="email" id="email1" aria-required="true"
-              placeholder="Enter your email" autocomplete="off" aria-label="enter your email">
+              placeholder="Enter your email" autocomplete="off" title="get early access to fylo">
             <span class="form__error">Please check your email</span>
           </div>
           <div class="form__holder">
@@ -65,55 +65,59 @@
     </section>
     <!-- Content Section -->
     <section class="content">
-      <div class="content__divider">
-        <h2 class="content__title">Stay productive, wherever you are</h2>
-        <p>Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.</p>
-        <p>Securely share files and folders with friends, family and colleagues for
-          live collaboration. No email attachments required!</p>
-        <div class="content__link">
-          <a href="#">See how fylo works
-            <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <defs>
-                <circle id="b" cx="6" cy="6" r="6" />
-                <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
-                  <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
-                  <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                  <feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
-                    in="shadowBlurOuter1" />
-                </filter>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <g transform="translate(2 2)">
-                  <use fill="#000" filter="url(#a)" xlink:href="#b" />
-                  <use fill="#3DA08F" xlink:href="#b" />
+      <div class="content__container cap-width">
+        <div class="content__divider">
+          <h2 class="content__title">Stay productive, wherever you are</h2>
+          <p>Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!</p>
+          <div class="content__link">
+            <a href="#">See how fylo works
+              <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <circle id="b" cx="6" cy="6" r="6" />
+                  <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                    <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                    <feColorMatrix
+                      values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                      in="shadowBlurOuter1" />
+                  </filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(2 2)">
+                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                    <use fill="#3DA08F" xlink:href="#b" />
+                  </g>
+                  <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF" />
                 </g>
-                <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF" />
-              </g>
-            </svg>
-          </a>
-        </div>
-        <article class="quote">
-          <p class="quote__text">
-            Fylo has improved our team productivity by an order of magnitude. Since
-            making the switch our team has become a well-oiled collaboration machine.
-          </p>
-          <div class="quote__wrapper">
-            <img src="./images/avatar-testimonial.jpg" alt="kyle burton image">
-            <div class="quote__info">
-              <h3>Kyle Burton</h3>
-              <p>Founder & CEO, Huddle</p>
-            </div>
+              </svg>
+            </a>
           </div>
-        </article>
-      </div>
-      <div class="content__divider">
-        <img src="./images/illustration-2.svg" alt="stay productive image" class="content__image">
+          <article class="quote">
+            <p class="quote__text">
+              Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.
+            </p>
+            <div class="quote__wrapper">
+              <img src="./images/avatar-testimonial.jpg" alt="kyle burton image">
+              <div class="quote__info">
+                <h3>Kyle Burton</h3>
+                <p>Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="content__divider">
+          <img src="./images/illustration-2.svg" alt="stay productive image" class="content__image">
+        </div>
       </div>
     </section>
     <!-- Call to Action Section -->
     <section class="cta" aria-label="call to action">
+      <div class="cta__container cap-width">
       <div class="cta__divider">
         <h2 class="cta__title">Get early access today</h2>
         <p class="cta__text">
@@ -125,7 +129,7 @@
         <form action="#" class="form js-email-form" method="POST">
           <div class="form__holder">
             <input class="form__input form__input--blue" type="text" name="email" id="email2" aria-required="true"
-              placeholder="Enter your email" autocomplete="off" aria-label="enter your email">
+              placeholder="Enter your email" autocomplete="off" title="get early access to fylo">
             <span class="form__error">Please check your email</span>
           </div>
           <div class="form__holder">
@@ -135,8 +139,10 @@
           </div>
         </form>
       </div>
+    </div>
     </section>
     <footer class="footer">
+      <div class="footer__cap cap-width">
       <div class="footer__brand">
         <img src="./images/logo-white.svg" alt="fylo website logo">
       </div>
@@ -258,6 +264,7 @@
           </ul>
         </nav>
       </div>
+    </div>
     </footer>
   </main>
   <!-- Link for the javascript -->
