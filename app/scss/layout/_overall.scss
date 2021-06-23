@@ -42,6 +42,10 @@ header {
         font-size: func.size(14, 3vw, 17);
         justify-content: space-between;
     }
+
+    a {
+        color: var.$vd-blue;
+    }
 }
 
 h1 {
