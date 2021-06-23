@@ -535,11 +535,11 @@ p {
     margin-bottom: 2.875rem
 }
 
-.footer__nav .footer__wrapper>p:first-of-type {
+.footer__nav .footer__wrapper p:first-of-type {
     margin-bottom: 1.5rem
 }
 
-.footer__nav .footer__wrapper>p svg {
+.footer__nav .footer__wrapper p svg {
     margin-right: 1.25rem
 }
 
