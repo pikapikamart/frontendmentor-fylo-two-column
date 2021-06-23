@@ -302,6 +302,10 @@ p {
     width: clamp(5.375rem, 13vw, 10.375rem)
 }
 
+.navbar__link a {
+    color: #070439
+}
+
 .content__link,
 .content__link a,
 .navbar--flattened,

@@ -33,6 +33,7 @@
     &__link {
         a {
             @extend %link-transition;
+            color: var.$vd-blue;
         }
     }
 
