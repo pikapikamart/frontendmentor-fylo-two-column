@@ -1,0 +1,115 @@
+@use "../abstract/functions" as func;
+@use "../abstract/variables" as var;
+@use "../abstract/mixins" as mix;
+
+.form {
+    $root: &;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(func.rem(260), 1fr));
+
+    &__holder {
+        position: relative;
+        text-align: left;
+
+        #{$root}__input {
+            border-radius: .25rem;
+            border: 1px solid var.$vd-blue;
+            font-size: func.size(13, 1.2vw, 15);
+            padding: func.rem(14) 1.5rem ;
+            width: 100%;
+
+            &:focus-visible {
+                box-shadow: 0 0 1px 2px #FFFFFF,
+                            0 0 1px 4px var.$m-cyan;
+                border-color: transparent;
+            }
+
+            &.error {
+                border-color: #c23359;
+
+                + #{$root}__error {
+                    visibility: visible;
+                }
+            }
+
+            &--blue {
+                border-color: transparent;
+
+                &:focus-visible {
+                    box-shadow: 0 0 1px 2px var.$d-blue,
+                                0 0 1px 4px #FFFFFF;
+                    border-color: transparent;
+                }
+
+                &.error {
+
+                    + #{$root}__error {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    &__error {
+        color: #c23359;
+        display: block;
+        font-size: func.rem(12);
+        visibility: hidden;
+    }
+}
+
+.btn {
+    border-radius: .25rem;
+    font-size: func.rem(15);
+    font-family: 'Raleway', sans-serif;
+    line-height: 0;
+
+    &__cta {
+        font-size: func.size(11, 2vw, 14);
+        height: func.size(34, 5vw, 48);
+    }
+
+    &--default {
+        background-color: var.$b-blue;
+        color: #FFFFFF;
+        font-weight: 700;
+        height: 3rem;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: hsl(224, 70%, 64%)
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 1px 2px #FFFFFF,
+                        0 0 1px 4px var.$m-cyan;
+        }
+    }
+
+    &--blue {
+
+        &:focus-visible {
+            box-shadow: 0 0 1px 2px var.$d-blue,
+                        0 0 1px 4px #FFFFFF;
+        }
+    }
+}
+
+@media (min-width: 59em) {
+
+    .form {
+        grid-template-columns: minmax(50%, func.rem(320)) minmax(25%, func.rem(200));
+    
+        &__holder {
+            
+            &:last-of-type {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Link for the google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Link for the css -->
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+  <div class="email-success">Email successfully submitted!</div>
+  <header class="navbar navbar--flattened">
+    <img class="navbar__logo" src="./images/logo.svg" alt="fylo website logo">
+    <nav>
+      <ul class="navbar--flattened">
+        <li class="navbar__link">
+          <a href="#">Features</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#">Team</a>
+        </li>
+        <li class="navbar__link">
+          <a href="#">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__divider">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.</p>
+        <form action="#" method="POST" class="form js-email-form">
+          <div class="form__holder">
+            <p class="visually-hidden js-email-region" aria-live="polite"></p>
+            <input class="form__input"  type="text" name="email" id="email1" aria-required="true" placeholder="Enter your email"
+              autocomplete="off">
+            <span class="form__error">Please check your email</span>
+          </div>
+          <div class="form__holder">
+            <button type="submit" class="btn btn--default" aria-label="submit email form">
+              <span aria-hidden="true">Get Started</span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="hero__divider">
+        <img src="./images/illustration-1.svg" alt="hero section image" class="hero__image">
+      </div>
+    </section>
+    <!-- Content Section -->
+    <section class="content">
+      <div class="content__divider">
+        <h2 class="content__title">Stay productive, wherever you are</h2>
+        <p>Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+        <p>Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!</p>
+        <div class="content__link">
+          <a href="#">See how fylo works
+            <svg aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <circle id="b" cx="6" cy="6" r="6" />
+                <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+                  <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                  <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                  <feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                    in="shadowBlurOuter1" />
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="translate(2 2)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                  <use fill="#3DA08F" xlink:href="#b" />
+                </g>
+                <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF" />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <article class="quote">
+          <p class="quote__text">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="quote__wrapper">
+            <img src="./images/avatar-testimonial.jpg" alt="kyle burton image">
+            <div class="quote__info">
+              <h3>Kyle Burton</h3>
+              <p>Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="content__divider">
+        <img src="./images/illustration-2.svg" alt="stay productive image" class="content__image">
+      </div>
+    </section>
+    <!-- Call to Action Section -->
+    <section class="cta" aria-label="call to action">
+      <div class="cta__divider">
+        <h2 class="cta__title">Get early access today</h2>
+        <p class="cta__text">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+      <div class="cta__divider">
+        <form action="#" class="form js-email-form" method="POST">
+          <div class="form__holder">
+            <input class="form__input form__input--blue" type="text" name="email" id="email2" aria-required="true" placeholder="Enter your email"
+              autocomplete="off">
+            <span class="form__error">Please check your email</span>
+          </div>
+          <div class="form__holder">
+            <button type="submit" class="btn btn--default btn--blue" aria-label="submit email form">
+              <span aria-hidden="true">Get Started For Free</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__brand">
+        <img src="./images/logo-white.svg" alt="fylo website logo">
+      </div>
+      <div class="footer__container">
+        <nav class="navbar footer__nav">
+          <ul class="footer__wrapper">
+            <p class="navbar--flattened">
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z" fill="#FFF" fill-rule="evenodd"/></svg>
+              Phone: +1-543-123-4567
+            </p>
+            <p class="navbar--flattened">
+              <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z" fill="#FFF" fill-rule="evenodd"/></svg>
+              example@fylo.com
+            </p>
+          </ul>
+          <ul class="footer__wrapper">
+            <li class="navbar__link">
+              <a href="#">About Us</a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">Jobs</a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">Press</a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+          <ul class="footer__wrapper">
+            <li class="navbar__link">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">Terms</a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+          <ul class="footer__wrapper navbar--flattened">
+            <!-- facebook -->
+            <li class="navbar__link">
+              <a href="#" aria-label="go to facebook" rel="noreferrer">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                  <g id="Group_27" data-name="Group 27" transform="translate(-145 -2963)">
+                    <g id="Group_23" data-name="Group 23" transform="translate(161.891 2982)">
+                      <path id="_6f4fa2eb-7945-4441-abaa-5997f0a41715" data-name="6f4fa2eb-7945-4441-abaa-5997f0a41715" d="M5.734,2.329H7.015V.1A16.537,16.537,0,0,0,5.149,0,2.962,2.962,0,0,0,2.038,3.3V5.261H0V7.754H2.038v6.274h2.5V7.755H6.491L6.8,5.261H4.535V3.543c0-.721.195-1.214,1.2-1.214Z" transform="translate(-6 -12)" fill="#fff"/>
+                    </g>
+                    <g id="Ellipse_73" data-name="Ellipse 73" transform="translate(145 2963)" fill="none" stroke="#fff" stroke-width="1">
+                      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+                      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+                    </g>
+                  </g>
+                </svg>
+                
+              </a>
+            </li>
+            <!-- twitter -->
+            <li class="navbar__link">
+              <a href="#" aria-label="go to twitter" rel="noreferrer">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                  <g id="Group_26" data-name="Group 26" transform="translate(-187 -2961)">
+                    <g id="icon-twitter" transform="translate(451 3178)">
+                      <path id="icon-twitter-2" data-name="icon-twitter" d="M12.841,1.235a5.488,5.488,0,0,1-1.517.416A2.618,2.618,0,0,0,12.482.2a5.261,5.261,0,0,1-1.669.637,2.632,2.632,0,0,0-4.554,1.8,2.711,2.711,0,0,0,.061.6A7.451,7.451,0,0,1,.894.48,2.633,2.633,0,0,0,1.7,4,2.6,2.6,0,0,1,.514,3.674V3.7A2.645,2.645,0,0,0,2.623,6.289a2.627,2.627,0,0,1-.69.087,2.328,2.328,0,0,1-.5-.045,2.657,2.657,0,0,0,2.46,1.834A5.289,5.289,0,0,1,.63,9.288,4.931,4.931,0,0,1,0,9.252a7.411,7.411,0,0,0,4.038,1.181,7.441,7.441,0,0,0,7.492-7.491c0-.116,0-.229-.01-.34A5.252,5.252,0,0,0,12.841,1.235Z" transform="translate(-256 -208)" fill="#fff"/>
+                    </g>
+                    <g id="Ellipse_74" data-name="Ellipse 74" transform="translate(187 2961)" fill="none" stroke="#fff" stroke-width="1">
+                      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+                      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <!-- instagram -->
+            <li class="navbar__link">
+              <a href="#" aria-label="go to instagram" rel="noreferrer">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                  <g id="Group_25" data-name="Group 25" transform="translate(-227 -2960)">
+                    <g id="icon-instagram" transform="translate(491 3224)">
+                      <g id="icon-instagram-2" data-name="icon-instagram" transform="translate(-256 -256)">
+                        <path id="Path_348" data-name="Path 348" d="M9.627,0H3.572A3.578,3.578,0,0,0,0,3.573V9.628A3.577,3.577,0,0,0,3.572,13.2H9.627A3.577,3.577,0,0,0,13.2,9.628V3.573A3.578,3.578,0,0,0,9.627,0Zm2.8,9.628a2.8,2.8,0,0,1-2.8,2.8H3.572a2.8,2.8,0,0,1-2.8-2.8V3.573a2.8,2.8,0,0,1,2.8-2.8H9.627a2.8,2.8,0,0,1,2.8,2.8Zm0,0" transform="translate(0.001 0)" fill="#fff"/>
+                        <path id="Path_349" data-name="Path 349" d="M119.614,116a3.61,3.61,0,1,0,3.61,3.61A3.614,3.614,0,0,0,119.614,116Zm0,6.445a2.836,2.836,0,1,1,2.836-2.836A2.839,2.839,0,0,1,119.614,122.449Zm0,0" transform="translate(-113.013 -113.013)" fill="#fff"/>
+                        <path id="Path_350" data-name="Path 350" d="M359.043,66.285a1.067,1.067,0,1,0,1.067,1.067A1.068,1.068,0,0,0,359.043,66.285Zm0,1.359a.293.293,0,1,1,.293-.293A.293.293,0,0,1,359.043,67.644Zm0,0" transform="translate(-348.747 -64.576)" fill="#fff"/>
+                      </g>
+                    </g>
+                    <g id="Ellipse_75" data-name="Ellipse 75" transform="translate(227 2960)" fill="none" stroke="#fff" stroke-width="1">
+                      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+                      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+                    </g>
+                  </g>
+                </svg>                
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </main>
+  <!-- Link for the javascript -->
+  <script src="./app/js/script.js"></script>
+</body>
+
+</html>

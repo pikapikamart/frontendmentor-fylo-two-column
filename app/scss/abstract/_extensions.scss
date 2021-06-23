@@ -1,0 +1,39 @@
+@use "./variables" as var;
+@use "./functions" as func;
+@use "mixins" as mix;
+
+%link-transition {
+    position: relative;
+
+    &::after {
+        content: "";
+        bottom: 0;
+        height: 2px;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        transform: translate(-50%, 0);
+        transition: opacity .3s ease,
+                    transform .3s ease;
+        width: 90%;
+    }
+
+    &:hover,
+    &:focus-visible {
+
+        &::after {
+            opacity: 1;
+            transform: translate(-50%, .25rem);
+        }
+    }
+}
+
+%left-right-pad {
+    padding-left: func.size(24, 6.2vw, 80);
+    padding-right: func.size(24, 6.2vw, 80);
+}
+
+%column-reverse {
+    @include mix.flex(center, center, column-reverse);
+}
+

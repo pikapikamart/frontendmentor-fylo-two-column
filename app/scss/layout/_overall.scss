@@ -1,0 +1,64 @@
+// Imports/ Use
+@use "../abstract/functions" as func;
+@use "../abstract/variables" as var;
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+nav {
+
+    > * {
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+header {
+    $root: #{navbar};
+    padding-top: clamp(1.5rem, 4.7vw, 4rem);
+    padding-left: clamp(1.5rem, 6vw, 5rem);
+    padding-right: clamp(1.5rem, 6vw, 5rem);
+
+    &.navbar {
+        font-size: func.size(14, 3vw, 17);
+        justify-content: space-between;
+    }
+}
+
+h1 {
+    font-size: func.size(26, 3vw, 40);
+    line-height: 1.6;
+    margin-bottom: func.rem(30);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+@media (min-width: 59em) {
+
+    h1 {
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+}

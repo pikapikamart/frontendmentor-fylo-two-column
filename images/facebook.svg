@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="Group_25" data-name="Group 25" transform="translate(-227 -2960)">
+    <g id="icon-instagram" transform="translate(491 3224)">
+      <g id="icon-instagram-2" data-name="icon-instagram" transform="translate(-256 -256)">
+        <path id="Path_348" data-name="Path 348" d="M9.627,0H3.572A3.578,3.578,0,0,0,0,3.573V9.628A3.577,3.577,0,0,0,3.572,13.2H9.627A3.577,3.577,0,0,0,13.2,9.628V3.573A3.578,3.578,0,0,0,9.627,0Zm2.8,9.628a2.8,2.8,0,0,1-2.8,2.8H3.572a2.8,2.8,0,0,1-2.8-2.8V3.573a2.8,2.8,0,0,1,2.8-2.8H9.627a2.8,2.8,0,0,1,2.8,2.8Zm0,0" transform="translate(0.001 0)" fill="#fff"/>
+        <path id="Path_349" data-name="Path 349" d="M119.614,116a3.61,3.61,0,1,0,3.61,3.61A3.614,3.614,0,0,0,119.614,116Zm0,6.445a2.836,2.836,0,1,1,2.836-2.836A2.839,2.839,0,0,1,119.614,122.449Zm0,0" transform="translate(-113.013 -113.013)" fill="#fff"/>
+        <path id="Path_350" data-name="Path 350" d="M359.043,66.285a1.067,1.067,0,1,0,1.067,1.067A1.068,1.068,0,0,0,359.043,66.285Zm0,1.359a.293.293,0,1,1,.293-.293A.293.293,0,0,1,359.043,67.644Zm0,0" transform="translate(-348.747 -64.576)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Ellipse_75" data-name="Ellipse 75" transform="translate(227 2960)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+      <circle cx="14.5" cy="14.5" r="14" fill="none"/>
+    </g>
+  </g>
+</svg>
